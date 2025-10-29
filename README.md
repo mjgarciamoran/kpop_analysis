@@ -49,7 +49,7 @@ For instance:
 - On the other hand, likes and comments can be manually hidden, allowing us to calculate how many videos have disabled likes and how many have disabled comments.
 
 <p align="center">
-  <img src="./images/kpop_init_unlistedvshidden.jpg" alt="Init 3" height="300">
+  <img src="./images/kpop_init_unlistedvshidden.jpg" alt="Init 3" height="500">
 </p>
 <p align="center">Visualization of unlisted videos vs hidden analytics.</p>
 
