@@ -5,20 +5,20 @@ This repository contains my analysis of K-Pop song release and daily YouTube ana
 ---
 ## Structure of the database
 The database currently contains information spanning four years (2022–2025) across three types of analytics: comments, likes, and views.
-This results in a total of 12 CSV files, which I refer to as _analytics records_.
+This results in a total of __12 CSV files__, which I refer to as _analytics records_.
 
 ---
 
 ## Preliminary data quality assessment
 
 Before diving into the analysis, a general quality assessment of the dataset is performed.
-After verifying that data was successfully fetched each day, the next steps focus on identifying duplicate entries and missing (NaN) values.
+After verifying that data was successfully fetched each day, the next steps focus on identifying __duplicate entries__ and __missing (NaN) values__.
 
 ### Total videos, deduplication
 To get an overview of the data, the total number of videos per year is shown, alongside the number of new videos added each day.
 
 Since the song release data originates from a community-driven source, duplicate entries are relatively common.
-By detecting and removing duplicates, we are left with 6,741 unique videos.
+By detecting and removing duplicates, we are left with __6,741 unique videos__.
 
 <p align="center">
   <img src="./pics/kpop_init_dedup.jpg" alt="Example 1">
@@ -41,7 +41,7 @@ To do this, we differentiate between 3 types of entries.
 </p>
 <p align="center">Visualization of NaN detection.</p>
 
-It is worth noting that each video corresponds to 3 entries, one per analytic record. This means that the earlier count of 6,741 unique videos translates to 20,223 total entries.
+It is worth noting that each video corresponds to 3 entries, one per analytic record. This means that the earlier count of 6,741 unique videos translates to __20,223 total entries__.
 
 Additionally, wee can already infer some conclusions from this data; particularly from discrepancies in the number of all-NaN entries across different types of analytics.
 For instance:
