@@ -1,6 +1,6 @@
 # K-Pop Song Release and Analytics Analysis - Work In Progress
 
-This repository contains my analysis of K-Pop song release and daily YouTube analytics data from the database previously created in this project: [K-Pop Release Database with Daily Analytics](https://github.com/mjgarciamoran/kpop_release_database).
+This repository contains my analysis of K-Pop song release and daily YouTube analytics data from the database previously created in this project: __[K-Pop Release Database with Daily Analytics](https://github.com/mjgarciamoran/kpop_release_database)__.
 
 ---
 ## Structure of the database
@@ -21,7 +21,7 @@ Since the song release data originates from a community-driven source, duplicate
 By detecting and removing duplicates, we are left with __6,741 unique videos__.
 
 <p align="center">
-  <img src="./pics/kpop_init_dedup.jpg" alt="Example 1">
+  <img src="./images/kpop_init_dedup.jpg" alt="Example 1">
   <!-- <img src="./images/example2.png" alt="Example 2" height="300"> -->
 </p>
 <p align="center">Visualizations of gathered videos and their deduplication.</p>
@@ -36,7 +36,7 @@ To do this, we differentiate between 3 types of entries.
 - `Unexpected NaNs` — Entries with isolated missing values, typically only one per row. These are likely due to occasional fetching errors.
 
 <p align="center">
-  <img src="./pics/kpop_init_nans.jpg" alt="Example 1">
+  <img src="./images/kpop_init_nans.jpg" alt="Example 1">
   <!-- <img src="./images/example2.png" alt="Example 2" height="300"> -->
 </p>
 <p align="center">Visualization of NaN detection.</p>
