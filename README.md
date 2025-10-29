@@ -21,7 +21,7 @@ Since the song release data originates from a community-driven source, duplicate
 By detecting and removing duplicates, we are left with __6,741 unique videos__.
 
 <p align="center">
-  <img src="./images/kpop_init_dedup.jpg" alt="Example 1">
+  <img src="./images/kpop_init_dedup.jpg" alt="Init 1">
   <!-- <img src="./images/example2.png" alt="Example 2" height="300"> -->
 </p>
 <p align="center">Visualizations of gathered videos and their deduplication.</p>
@@ -36,7 +36,7 @@ To do this, we differentiate between 3 types of entries.
 - `Unexpected NaNs` — Entries with isolated missing values, typically only one per row. These are likely due to occasional fetching errors.
 
 <p align="center">
-  <img src="./images/kpop_init_nans.jpg" alt="Example 1">
+  <img src="./images/kpop_init_nans.jpg" alt="Init 2">
   <!-- <img src="./images/example2.png" alt="Example 2" height="300"> -->
 </p>
 <p align="center">Visualization of NaN detection.</p>
@@ -46,7 +46,12 @@ It is worth noting that each video corresponds to 3 entries, one per analytic re
 Additionally, wee can already infer some conclusions from this data; particularly from discrepancies in the number of all-NaN entries across different types of analytics.
 For instance:
 - The number of all-NaN entries in the views records determines the number of unlisted (unpublished or private) videos, since views cannot be made private in any other way.
-- On the other hand, likes and comments can be manually hidden, allowing us to estimate how many videos have been unlisted, how many have disabled likes, and how many have disabled comments.
+- On the other hand, likes and comments can be manually hidden, allowing us to calculate how many videos have disabled likes and how many have disabled comments.
+
+<p align="center">
+  <img src="./images/kpop_init_unlistedvshidden.jpg" alt="Init 3" height="300">
+</p>
+<p align="center">Visualization of unlisted videos vs hidden analytics.</p>
 
 ---
 ## Secondary data quality assessment
