@@ -1,6 +1,6 @@
-# K-Pop Song Release and Analytics Analysis - Work In Progress
+# K-Pop Song Release and Analytics - Preliminary Data Quality Assessment
 
-This repository contains my analysis of K-Pop song release and daily YouTube analytics data from the database previously created in this project: __[K-Pop Release Database with Daily Analytics](https://github.com/mjgarciamoran/kpop_release_database)__.
+This repository contains the preliminary data quality assessment of the K-Pop song release and daily YouTube analytics data I have gathered and stored in the following repository: __[K-Pop Release Database with Daily Analytics](https://github.com/mjgarciamoran/kpop_release_database)__.
 
 ---
 ## Structure of the database
@@ -9,9 +9,9 @@ This results in a total of __12 CSV files__, which I refer to as _analytics reco
 
 ---
 
-## Preliminary data quality assessment
+## Data quality assessment
 
-Before diving into the analysis, a general quality assessment of the dataset is performed.
+Before diving into any sort of analysis, a general quality assessment of the dataset needs to be performed.
 After verifying that data was successfully fetched each day, the next steps focus on identifying __duplicate entries__ and __missing (NaN) values__.
 
 ### Total videos, deduplication
@@ -53,9 +53,11 @@ For instance:
 </p>
 <p align="center">Visualization of unlisted videos vs hidden analytics.</p>
 
+<!--
+
+
 ---
 ## Secondary data quality assessment
-<!--
 
 discrepancies between kpopping dates and youtube dates
 
