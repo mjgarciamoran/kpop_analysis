@@ -11,7 +11,7 @@ This results in a total of __12 CSV files__, which I refer to as _analytics reco
 
 ## Data quality assessment
 
-Before diving into any sort of analysis, a general quality assessment of the dataset needs to be performed.
+Before proceeding with any analysis, a general assessment of the dataset's quality is necessary.
 After verifying that data was successfully fetched each day, the next steps focus on identifying __duplicate entries__ and __missing (NaN) values__.
 
 ### Total videos, deduplication
@@ -28,7 +28,7 @@ By detecting and removing duplicates, we are left with __6,741 unique videos__.
 
 ### Missing values
 
-we conclude this quality assessment by detecting missing values.
+We conclude the quality assessment by identifying and classifying missing values.
 To do this, we differentiate between 3 types of entries.
 
 - `All-NaN entries` — Entries with missing values in all columns. These analytics have been unlisted (made private) before data collection for this project began.
@@ -43,7 +43,7 @@ To do this, we differentiate between 3 types of entries.
 
 It is worth noting that each video corresponds to 3 entries, one per analytic record. This means that the earlier count of 6,741 unique videos translates to __20,223 total entries__.
 
-Additionally, wee can already infer some conclusions from this data; particularly from discrepancies in the number of all-NaN entries across different types of analytics.
+Additionally, we can already infer some conclusions from this data; particularly from discrepancies in the number of all-NaN entries across different types of analytics.
 For instance:
 - The number of all-NaN entries in the views records determines the number of unlisted (unpublished or private) videos, since views cannot be made private in any other way.
 - On the other hand, likes and comments can be manually hidden, allowing us to calculate how many videos have disabled likes and how many have disabled comments.
@@ -64,3 +64,8 @@ discrepancies between kpopping dates and youtube dates
 deleted analytics by youtube
 
 -->
+
+## Conclusion
+Overall, the dataset is in good condition, with duplicates and missing values being the main issues identified. Most of these missing values have identifiable causes, such as videos becoming unlisted or analytics being disabled.
+
+After deduplication, 19680 entries remain, providing a solid foundation for further analysis.
